@@ -1,0 +1,159 @@
+<!DOCTYPE html5>
+<html>
+<body>
+<link rel="stylesheet" href="estilos.css">
+<div class="fondo">
+<audio id="player" src="31.mp3" preload loop></audio>
+<audio id="player1" src="45.mp3" preload loop></audio>
+<audio id="player2" src="60.mp3" preload loop></audio>
+<audio id="player3" src="74.mp3" preload loop></audio>
+<audio id="player4" src="88.mp3" preload loop></audio>
+<button class="cuadrito"></button> 
+
+    <button class="a"><font size="15">N°1</font></button>
+    <button class="a1"><font size="15">N°2</font></button> 
+    <button class="a2"><font size="15">N°3</font></button>
+    <button class="a3"><font size="15">N°4</font></button> 
+    <button class="a4"><font size="15">N°5</font></button>
+    <button onclick="p1()" class="a5"></button>
+    <button onclick="p2()" class="a6"></button>      
+    <button onclick="p3()" class="a7"></button>
+    <button onclick="p4()" class="a8"></button>     
+    <button onclick="p5()" class="a9"></button>
+    <button onclick="p6()" class="a10"></button>      
+    <button onclick="p7()" class="a11"></button>
+    <button onclick="p8()" class="a12"></button> 
+    <button onclick="p9()" class="a13"></button>
+    <button onclick="p10()" class="a14"></button>  
+
+    <button onclick="d1()" class="a15"></button>
+    <button onclick="d3()" class="a16"></button>
+    <button onclick="d2()" class="a17"><font size="15" color="white">+</font></button>
+    <button onclick="d()" class="a18"><font size="15" color="white">-</font></button>
+
+<script type="text/javascript">
+document.getElementById("player");	
+var s1 = new Audio();
+s1.src="extintor 1.mp3";
+function d(){
+document.getElementById('player').volume -= .1
+document.getElementById('player1').volume -= .1
+document.getElementById('player2').volume -= .1
+document.getElementById('player3').volume -= .1
+document.getElementById('player4').volume -= .1
+}
+function d1(){
+document.getElementById('player').pause()
+document.getElementById('player1').pause()
+document.getElementById('player2').pause()
+document.getElementById('player3').pause()
+document.getElementById('player4').pause()
+document.querySelector(".a5").style.display="none";
+document.querySelector(".a6").style.display="block";
+document.querySelector(".a7").style.display="none";
+document.querySelector(".a8").style.display="block";
+document.querySelector(".a9").style.display="none";
+document.querySelector(".a10").style.display="block";
+document.querySelector(".a11").style.display="none";
+document.querySelector(".a12").style.display="block";
+document.querySelector(".a13").style.display="none";
+document.querySelector(".a14").style.display="block"
+document.querySelector(".a15").style.display="none";
+document.querySelector(".a16").style.display="block";
+}
+function d3(){
+document.getElementById('player').play()
+document.getElementById('player1').play()
+document.getElementById('player2').play()
+document.getElementById('player3').play()
+document.getElementById('player4').play()
+    document.querySelector(".a5").style.display="block";
+    document.querySelector(".a6").style.display="none";
+    document.querySelector(".a7").style.display="block";
+    document.querySelector(".a8").style.display="none";
+    document.querySelector(".a9").style.display="block";
+    document.querySelector(".a10").style.display="none";
+    document.querySelector(".a11").style.display="block";
+    document.querySelector(".a12").style.display="none";
+    document.querySelector(".a13").style.display="block";
+    document.querySelector(".a14").style.display="none";
+document.querySelector(".a15").style.display="block";
+document.querySelector(".a16").style.display="none";
+}
+function d2(){
+document.getElementById('player').volume += .1
+document.getElementById('player1').volume += .1
+document.getElementById('player2').volume += .1
+document.getElementById('player3').volume += .1
+document.getElementById('player4').volume += .1
+}
+function p1(){
+	document.getElementById('player').pause()
+    document.querySelector(".a5").style.display="none";
+    document.querySelector(".a6").style.display="block";
+    x=1;
+} 
+function p2(){
+	document.getElementById('player').play()
+    document.querySelector(".a5").style.display="block";
+    document.querySelector(".a6").style.display="none";
+    document.querySelector(".a15").style.display="block";
+    document.querySelector(".a16").style.display="none";
+    x=2;
+} 
+function p3(){
+	document.getElementById('player1').pause()
+    document.querySelector(".a7").style.display="none";
+    document.querySelector(".a8").style.display="block";
+} 
+function p4(){
+	document.getElementById('player1').play()
+    document.querySelector(".a7").style.display="block";
+    document.querySelector(".a8").style.display="none";
+    document.querySelector(".a15").style.display="block";
+    document.querySelector(".a16").style.display="none";
+} 
+function p5(){
+	document.getElementById('player2').pause()
+    document.querySelector(".a9").style.display="none";
+    document.querySelector(".a10").style.display="block";
+} 
+function p6(){
+	document.getElementById('player2').play()
+    document.querySelector(".a9").style.display="block";
+    document.querySelector(".a10").style.display="none";
+    document.querySelector(".a15").style.display="block";
+    document.querySelector(".a16").style.display="none";
+} 
+function p7(){
+	document.getElementById('player3').pause()
+
+    document.querySelector(".a11").style.display="none";
+    document.querySelector(".a12").style.display="block";
+} 
+function p8(){
+	document.getElementById('player3').play()
+    document.querySelector(".a11").style.display="block";
+    document.querySelector(".a12").style.display="none";
+    document.querySelector(".a15").style.display="block";
+    document.querySelector(".a16").style.display="none";
+} 
+function p9(){
+	document.getElementById('player4').pause()
+
+    document.querySelector(".a13").style.display="none";
+    document.querySelector(".a14").style.display="block";
+    document.querySelector(".a13").style.display="none";
+    document.querySelector(".a14").style.display="block";
+} 
+function p10(){
+	document.getElementById('player4').play()
+    document.querySelector(".a13").style.display="block";
+    document.querySelector(".a14").style.display="none";
+    document.querySelector(".a15").style.display="block";
+    document.querySelector(".a16").style.display="none";
+} 
+</script>
+	
+</body>
+</html>
